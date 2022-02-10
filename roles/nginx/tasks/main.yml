@@ -15,7 +15,7 @@
     mode: 0755
     recurse: yes
     state: directory
-    user: root
+    owner: root
 
 - name: index
   template:
