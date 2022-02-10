@@ -16,7 +16,6 @@
     recurse: yes
     state: directory
     user: root
-    group: root
 
 - name: index
   template:
