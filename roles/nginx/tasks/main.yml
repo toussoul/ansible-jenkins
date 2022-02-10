@@ -8,7 +8,15 @@
   systemd:
     name: "{{ pkg }}"
     state: started
-  
+
+- name: create directory  
+  file:
+    path: /var/www/html
+    mode: 0755
+    recurse: yes
+    state: directory
+    user: root
+    group: root
 
 - name: index
   template:
